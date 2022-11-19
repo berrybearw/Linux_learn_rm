@@ -29,3 +29,18 @@ step 2 :
 step 3 : 
 
 `find . -name '* *' | awk -F / '{print "\""$2"\""}' | xargs rm -f`
+
+Linux 清理檔案沒釋放空間
+---
+
+參考 : 
+
+* [https://access.redhat.com/solutions/2316](https://access.redhat.com/solutions/2316)
+
+* [https://unix.stackexchange.com/questions/68523/find-and-remove-large-files-that-are-open-but-have-been-deleted](https://unix.stackexchange.com/questions/68523/find-and-remove-large-files-that-are-open-but-have-been-deleted)
+
+* [https://serverfault.com/questions/207100/how-can-i-find-phantom-storage-usage](https://serverfault.com/questions/207100/how-can-i-find-phantom-storage-usage)
+
+可以用 lsof 檢查已清理 程序卻卡住 process
+
+`lsof | grep deleted`
