@@ -118,7 +118,7 @@ gdb 方式 參考
 
 上述指令撰寫執行檔
 
-``
+```c
 p dup2(open("/tmp/process_stdout", 1089, 0777), 1)
 p dup2(open("/tmp/process_stderr", 1089, 0777), 2)
 q
