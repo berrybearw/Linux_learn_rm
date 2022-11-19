@@ -64,9 +64,9 @@ delete 後會進入到 背景
 
 `find /proc/*/fd -ls | grep deleted`
 
-查看檔案大小 ( 第 11 個欄位 )
+* 查看檔案大小 ( 第 11 個欄位 )
 
-lsof | grep deleted
+`lsof | grep deleted`
 
 ![image](https://user-images.githubusercontent.com/96226780/202836095-c951e80d-70a2-461c-8dd8-b45eba38ef73.png)
 
